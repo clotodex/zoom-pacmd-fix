@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#################################################
+# Fake script to check annoying apps calling it #
+#################################################
+
+#echo "$@" >> /tmp/pacmd.log
+
+case $1 in
+    list-sinks)  # Ok
+		pactl list sinks short
+        ;;
+    *)
+		;;
+esac
