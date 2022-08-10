@@ -11,10 +11,10 @@ Either execute `./install.sh` as *root*, or manually copy the `pacmd` file into 
 
 Pipewire is becoming more mature and being a great choice for wayland users.  
 Pipewire can serve the pulseaudio API as soundserver and also implements the common tool `pactl`.
-Pacmd however is seen as obsolete and will (most likely) (never be implemented for pipewire)[https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/357], since it is highly specific to pulseaudio and most of its functionality can be accessed through pactl.
+Pacmd however is seen as obsolete and will (most likely) [never be implemented for pipewire](https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/357), since it is highly specific to pulseaudio and most of its functionality can be accessed through pactl.
 Some distributions (e.g. `archlinux` or `gentoo`) are thus not installing pacmd anymore when pipewire is installed with pulseaudio support.
 
-And zoom for some reason uses pacmd internally to manage sound - thus (segfaulting)[https://community.zoom.com/t5/Meetings/Unable-to-start-zoom-on-linux-with-quot-pacmd-command-not-found/m-p/61892] if `pacmd` is not installed.
+And zoom for some reason uses pacmd internally to manage sound - thus [segfaulting](https://community.zoom.com/t5/Meetings/Unable-to-start-zoom-on-linux-with-quot-pacmd-command-not-found/m-p/61892) if `pacmd` is not installed.
 
 ## Explanation of the fix
 
